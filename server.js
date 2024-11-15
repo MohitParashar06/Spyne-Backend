@@ -9,7 +9,8 @@ const connectDB = require(`./connect`);
 const app = express();
 app.use(express.json());
 const corsOptions = {
-    origin: 'http://localhost:3000' || 'https://spyne-frontend-4.onrender.com', // Replace with your frontend's URL
+    origin: 'https://spyne-frontend-4.onrender.com',
+    allowedHeaders: 'Content-Type,Authorization', // Replace with your frontend's URL
     credentials: true,              // Allows cookies to be sent
   };
   app.use(cors(corsOptions)); 
