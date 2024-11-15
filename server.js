@@ -10,6 +10,7 @@ const app = express();
 app.use(express.json());
 const corsOptions = {
     origin: 'https://spyne-frontend-4.onrender.com',
+    methods: 'GET,POST,PUT,DELETE,OPTIONS',
     allowedHeaders: 'Content-Type,Authorization', // Replace with your frontend's URL
     credentials: true,              // Allows cookies to be sent
   };
